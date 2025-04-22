@@ -1,0 +1,45 @@
+/* SELECTOR UNIVERSAL */
+/* * {
+    color: red;
+} */
+
+/* SELECTOR DE ETIQUETA */
+/* p {
+    color: red;
+} */
+
+/* SELECTOR DE CLASE */
+/* .gondor {
+    background-color: blue;
+    color: yellow;
+}
+.mordor {
+    background-color: black;
+    color: green;
+} */
+
+/* SELECTOR DE ID */
+/* #aragorn {
+    color: brown;
+}
+#sauron {
+    color: orange;
+} */
+
+
+/* SELECTOR DE HIJOS */
+/* .perritos > article > h2 {
+    color: green;
+} */
+
+
+/* SELECTOR DE DESCENDIENTES */
+/* .perritos h2 {
+    color: green;
+} */
+
+/* SELECTOR DE ATRIBUTO */
+/* input[type="text"] {
+    color: red;
+} */
+

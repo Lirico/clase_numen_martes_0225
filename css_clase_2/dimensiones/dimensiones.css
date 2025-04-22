@@ -1,0 +1,93 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+/***** DIMENSIONES *****/
+/* 
+    ABSOLUTAS -> No dependen de una referencia externa para tener un valor propio
+        -> px
+        -> pulgadas -> inches
+
+    RELATIVAS -> Si dependen
+        -> procentaje
+        -> viewport -> height - width
+        -> rem
+        -> em
+*/
+
+
+/* ETIQUETAS DE BLOQUE */
+/* 
+    div / section / article / header / main / p / aside / nav / footer / ul / li
+*/
+
+/* ETIQUETAS DE LINEA */
+/* 
+    button / a / select / options / input / span / img / video / audio
+    b / u / mark / sup / strong 
+*/
+/* div {
+    background-color: green;
+    width: 100vw;
+    height: 100vh;
+}
+section {
+    width: 100%;
+    height: 100vh;
+} */
+/* span {
+    background-color: orange;
+    width: 100px;
+    height: 30px;
+    display: block;
+} */
+
+/* html {
+    font-size: 20px; 
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+h4 {
+    font-size: 1rem;
+}
+
+section {
+    font-size: 10px;
+}
+section > h1 {
+    font-size: 2em;
+}
+section > h2 {
+    font-size: 1.5em;
+}
+section > h3 {
+    font-size: 1.25em;
+}
+section > h4 {
+    font-size: 1em;
+}
+article {
+    font-size: 8px;
+}
+article > h1 {
+    font-size: 2em;
+}
+article > h2 {
+    font-size: 1.5em;
+}
+article > h3 {
+    font-size: 1.25em;
+}
+article > h4 {
+    font-size: 1em;
+} */

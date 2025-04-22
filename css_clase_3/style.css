@@ -1,0 +1,128 @@
+/******* BOX MODELING ********/
+
+/*
+    Una forma de representar etiquetas contenedoras (vease
+    section, article, aside, div, etc) como cajas.
+    Estas cajas poodran estar sujetas a dimensiones
+    y sujetas a posicionamiento.
+
+    Estas cajas estan compuestas por 4 caracteristicas:
+        1. Contenido (texto u otras etiquetas)
+        2. Borde (define las lineas contorno de la caja)
+        3. Relleno ( se encuentra entre el borde y el contenido)
+        4. Margenes ( que se encuentran por fuera de los bordes)
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* .padre {
+    width: 300px;
+    height: 300px;
+    border: 10px solid black;
+    padding: 10px;
+}
+.tio {
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    padding: 10px;
+} */
+
+
+
+/******* POSITIONING ********/
+/* 
+    Nos permite posicionar un elemento ya sea
+    relativo al navegador o relativo a su contenedor
+    padre.
+
+    1. ABSOLUTO (absolute)
+    2. RELATIVO (relative)
+    3. FIJADO (fixed)
+    4. PEGAJOSO (sticky) -> Para investigar
+*/
+
+/* .un-div {
+    width: 100%;
+    height: 500px;
+    background-color: red;
+} */
+
+/* .padre {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    background-color: white;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+.hijo {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    position: relative;
+    top: 150px;
+    left: 100px;
+} */
+
+/* nav {
+    background-color: purple;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+img {
+    width: 80px;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+} */
+/* PSEUDO CLASES -> AGREGAR ESTILOS ANTE INTERACCION */
+/* img:hover {
+    transform: scale(1.25);
+}
+
+
+.uno {
+    height: 100vh;
+    background-color: yellow;
+}
+.dos {
+    height: 100vh;
+    background-color: green;
+} */
+
+/********* INDICE Z *********/
+/* .primero {
+    width: 650px;
+    height: 500px;
+    border: 2px dashed black;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    z-index: 1;
+}
+.segundo {
+    background-color: yellow;
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    right: 50px;
+    top: 250px;
+    z-index: 3;
+}
+.tercero {
+    background-color: green;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: 75px;
+    top: 150px;
+    z-index: 2;
+} */

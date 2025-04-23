@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+/*********** CUSTOM PROPERTIES **********/
+:root {
+    --primary-color:  #55a455;
+    --primary-alpha-color:  #55a45580;
+    --secondary-color: #785F44;
+    --white-color: #ffffff;
+    --primary-font: 'Poller One', curisve;
+}
+
+/*********** RESET **********/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px; /* El valor base de los REM */
+}
+body {
+    font-family: var(--primary-font);
+    overflow-x: hidden;
+    background-image: url("https://wallpapercave.com/wp/wp6850352.jpg");
+}
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+h1 {
+    color: var(--white-color);
+}
+
+/*********** UTILITES ***********/
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    line-height: 0;
+    font-family: var(--primary-font);
+    height: 3.3rem;
+    transition: 0.3s;
+    width: 200px;
+}
+.btn:hover {
+    background-color: var(--primary-alpha-color);
+}
+
+/*********** PAGE STYLES ***********/
+/******* NAVIGATION *******/
+.nav_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    position: fixed;
+    width: 100%;
+    transition: 0.3s;
+
+    & .logo {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+
+        & img {
+            width: 60px;
+        }
+    }
+    & .nav_menu {
+        display: flex;
+        column-gap: 50px;
+
+        & .nav_item  {
+            transition: 0.3s;
+        }
+        & .nav_item:hover  {
+            color: var(--secondary-color);
+        }
+    }
+}
+
+
+/******* HOME *******/
+.home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2%;
+
+    & h1 {
+        font-size: 5rem;
+    }
+    & span {
+        color: var(--primary-color);
+    }
+}
+
+.nav_active {
+    background-color: var(--primary-color);
+}
+
+/******* VH *******/
+.vh {
+    height: 100vh;
+    background-color: var(--white-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+

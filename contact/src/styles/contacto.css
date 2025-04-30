@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poller+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/********* CUSTOM PROPERTIES *********/
+:root {
+    --primary-color: #4191FF;
+    --white-color: #ffffff;
+    --grey-light-color: #c0c0c0;
+    --primary-font: 'Roboto', sans-serif;
+}
+
+/********* RESET *********/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+}
+body {
+    background-color: var(--primary-color);
+    font-family: var(--primary-font);
+    overflow-x: hidden;
+}
+
+/********* UTILITY *********/
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/********* PAGE STYLES **********/
+/******* CONTACT *******/
+.contact {
+    width: 100%;
+    height: 100vh;
+}
+.grid_container {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    height: 100%;
+    width: 100%;
+}
+
+/******* FORM ******/
+.form_grid_item {
+    height: 100%;
+    width: 100%;
+    row-gap: 1rem;
+
+    & h2 {
+        color: var(--white-color);
+        font-size: 2.5rem;
+    }
+
+    & .form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        width: 90%;
+
+        & input, textarea, button{
+            border: none;
+            border-radius: 5px;
+            font-family: var(--primary-font);
+            font-size: 1.2rem;
+            padding: 1rem 0 1rem 1rem;
+        }
+        & input::placeholder, textarea::placeholder{
+            color: var(--grey-light-color);
+        }
+        & textarea {
+            resize: none;
+        }
+        & button {
+            background-color: var(--primary-color);
+            border: 3px solid var(--white-color);
+            color: var(--white-color);
+            cursor: pointer;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        & button:hover {
+            background-color: var(--white-color);
+            color: var(--primary-color);
+        }
+    }
+}
+
+/******* MAP ******/
+.map_grid_item {
+    height: 100%;
+    width: 100%;
+
+    & iframe {
+        width: 90%;
+        height: 60%;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    /******* CONTACT *******/
+    .grid_container {
+        grid-template-columns: 1fr;
+    }
+    /******* FORM ******/
+    .form_grid_item {
+        margin-bottom: 4rem;
+    }
+
+    /******* MAP ******/
+    .map_grid_item {
+        padding-bottom: 2rem;
+
+        & iframe {
+            height: 400px;
+        }
+    }
+}
